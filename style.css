@@ -222,19 +222,26 @@ body {
 
 .project-title-link {
     color: #b30000;
-    text-decoration: none;
-    transition: color 0.2s ease, font-size 0.2s ease;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 
 .project-title-link:hover,
 .project-title-link:focus {
-    color: #d71920;
-    font-size: 1.08em;
+    color: #ffffff;
+    background-color: #d71920;
+    transform: translateY(-1px);
 }
 
 .project-title-link:active {
-    color: #8b0000;
-    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #8b0000;
 }
 
 .project-description {
